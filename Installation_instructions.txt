@@ -1,0 +1,44 @@
+1. Install Anaconda Python distribution software
+	If you have your own computer download it here (should be Python 3.9):
+	https://www.anaconda.com/products/distribution
+
+	If you use the computers at Chalmers you dont need to do anything since Anaconda already exists.
+
+
+2. Go to the start menu in Windows and write "Anaconda Prompt" and click the app icon with this name.
+
+
+3. A terminal window appears. Now we will create a python environment for use with Optoprop:
+	a) Write the following command in the window:
+
+		conda create -n optopropEnv python numpy scipy matplotlib spyder shapely pandas
+
+	   Press y to continue when asked. This step may take some time. This command has now 
+	   created the environment optopropEnv and it already includes a number of the packages 
+	   required for it to work.
+
+
+	b) When the previous step is finished write the following command:
+
+		conda activate optopropEnv
+
+
+	c) Write the command below to install an additional package for creating CAD surfaces:
+
+		conda install -c conda-forge numpy-stl
+
+
+	d) Write the command below to install an additional package for visualizing the propeller and an old excel package:
+
+		pip install vtkplotlib
+		pip install openpyxl
+
+
+4. Start spyder by searching for it in the start menu. This program is for coding and running Python code. 
+   Similar to Matlab. Open the (optopropEnv)
+	a) First go into Tools > Preferences > IPython console > Graphics > Graphics backend. Change from
+	   "inline" to "automatic". Press OK.
+
+
+	b) Go to File > Open and find the fine OPTOPROP.py. This file is now open in the editor and can be 
+	   run by pressing F5. The input data used for design in found in the file "inputFile_course.py".
