@@ -11,16 +11,21 @@ from src.postProcess import PostProcess, PostProcessSweep
 from src.geometryGeneration import fullPropellerGeometry
 
 plt.close('all')
-vpl.close()
+vpl.close() 
 
 ## Load input file
 # Run _design to generate a geometry and files required for the analysis
 # Run _analysis to get details of off design conditions
-# Run _sweep_J for sweeping different operational conditions
-#import inputFile_students_analysis as inputData
-import inputFile_students_design as inputData
-#import inputFile_students_sweep_J as inputData
-#import inputFile_students_design as inputData
+# Run _sweep_J for sweeping different operational conditions    
+
+import inputFile_students_analysis as inputData
+
+# import inputFile_students_design as inputData
+
+# import Kevin_design as inputData
+
+# import inputFile_students_sweep_J as inputData
+
 
 ## Program running mode 
 if inputData.programMode == 'design':
@@ -43,7 +48,7 @@ if inputData.programMode == 'design':
     else:
         sys.exit('Invalid option set in specRunType in the input file!')
         
-    ## Post-process design
+    ## Post-process design  
     propellerGeom.plotAirfoilDistributions()
     propellerGeom.savePropellerDesignProperties(caseName=inputData.caseName)
     postObj = PostProcess(propellerGeom, operatingPoint, designCalc, inputData.programMode, caseName=inputData.caseName)

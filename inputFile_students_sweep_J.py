@@ -3,12 +3,12 @@ import numpy as np
 
 ## Input ##############################################################################################################
 #Program task:
-caseName = 'propeller_EXAMPLE_ACP'
-programMode = 'sweep'                   #either 'design', 'analysis', 'sweep'
+caseName = 'Baseline_Propeller'
+programMode = 'sweep'                               #either 'design', 'analysis', 'sweep'
 specRunType = 'AA'                                  #Design Adkings: DA, Design Larabee: DL
                                                     #Analysis Adkings: AA
 
-propellerForAnalysisPath = Path.cwd() / 'output' / 'propeller_EXAMPLE_ACP_propellerDesign.json'
+propellerForAnalysisPath = Path.cwd() / 'output' / 'Baseline_Propeller_propellerDesign.json'
                                                                                                 
 #atmospheric conditions
 H = 0                                   #height above sea level

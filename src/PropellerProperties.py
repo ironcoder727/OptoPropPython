@@ -210,7 +210,7 @@ class PropellerGeometry:
             self.tol = abs((self.AF-self.AFtarget)/(self.AFtarget))       
             
     def savePropellerDesignProperties(self, caseName = '', pathForJSON = Path.cwd() / 'output'):
-        #print performance data to json
+        # print performance data to json
         if caseName == '':
             self._filePath = pathForJSON / 'propellerDesign.json'
         else:

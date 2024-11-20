@@ -2,11 +2,11 @@ from pathlib import Path
 
 ## Input ##############################################################################################################
 #Program task:
-caseName = 'propeller_EXAMPLE_ACP'
+caseName = 'Baseline_Propeller'
 programMode = 'analysis'                  #either 'design' or 'analysis'"
 specRunType = 'AA'                      #Design Adkings: DA, Design Larabee: DL
                                         #Analysis Adkings: AA, Analysis Larabee: AL     
-propellerForAnalysisPath = Path.cwd() / 'output' / 'propeller_EXAMPLE_ACP_propellerDesign.json'
+propellerForAnalysisPath = Path.cwd() / 'output' / 'Baseline_Propeller_propellerDesign.json'
                                                                                                 
 #atmospheric conditions
 H = 0                                   #height above sea level

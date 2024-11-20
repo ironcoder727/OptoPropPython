@@ -13,7 +13,7 @@ propellerForAnalysisPath = Path.cwd() / 'output' / 'Baseline_Propeller.json'
 B = 2                                   # Nr of blades
 nPoints = 50
 D = 9*25.4e-3
-HTR = 27e-3/D                           # actual hub Diameter is 50 mm but we scale it down a bit
+HTR = 27e-3/D                           
 
 #TARGET DESIGN PERFORMANCE
 preSpecifiedPerformance = 'thrust'      #Specify 'CT', 'CP', 'thrust', 'power', or 'noSwirl' (only available for drela methods)
@@ -49,9 +49,7 @@ activityFactorTarget = 120
 
 #airfoil thickness
 thickRoot = 20                          #as percent of chord
-# thickRoot = 5                        #as percent of chord
-
-thickTip = 20                           #as percent of chord
+thickTip = 15                         #as percent of chord
 thicknessChoice = 'quadratic'           #'linear', 'quadratic', 'SR7L', 'GE36'
 typeOfParabolaThickness = 'tip'
 
