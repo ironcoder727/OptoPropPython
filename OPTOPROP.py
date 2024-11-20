@@ -18,13 +18,13 @@ vpl.close()
 # Run _analysis to get details of off design conditions
 # Run _sweep_J for sweeping different operational conditions    
 
-import inputFile_students_analysis as inputData
+# import inputFile_students_analysis as inputData
 
 # import inputFile_students_design as inputData
 
 # import Kevin_design as inputData
 
-# import inputFile_students_sweep_J as inputData
+import inputFile_students_sweep_J as inputData
 
 
 ## Program running mode 

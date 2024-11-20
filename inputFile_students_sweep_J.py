@@ -16,12 +16,12 @@ dT = 0                                  #temp change
 
 #Engine conditions for advance ratio sweep
 nOPs = 30
-advanceRatioList = np.linspace(0.7,1,nOPs)
+advanceRatioList = np.linspace(0.2,0.9,nOPs)
 typeOfOPSweep = 'constMach'             #'constMach', or 'constRPM'
 if typeOfOPSweep == 'constMach':
-    M_axial = 22/340.29             
+    M_axial = 17/340.29             
 elif typeOfOPSweep == 'constRPM':
-    rpm = 7500         
+    rpm = 6000         
 
 #Blade angle delta at 75% radius - use this if the blade is to pitched for this sweep
 deltaBeta75 = 0*np.pi/180

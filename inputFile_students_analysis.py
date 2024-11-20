@@ -3,7 +3,7 @@ from pathlib import Path
 ## Input ##############################################################################################################
 #Program task:
 caseName = 'Baseline_Propeller'
-programMode = 'analysis'                  #either 'design' or 'analysis'"
+programMode = 'analysis'                #Either 'design' or 'analysis'"
 specRunType = 'AA'                      #Design Adkings: DA, Design Larabee: DL
                                         #Analysis Adkings: AA, Analysis Larabee: AL     
 propellerForAnalysisPath = Path.cwd() / 'output' / 'Baseline_Propeller_propellerDesign.json'
@@ -13,12 +13,12 @@ H = 0                                   #height above sea level
 dT = 0                                  #temp change
 
 #Engine conditions
-M_axial = 30/340.29                     #freestream axial mach number
+M_axial = 17/340.29                     #freestream axial mach number
 rpmChoice = 'rpm'                       #either 'rpm' or 'tipMach'
 tipRelMach = 0.9
-rpm = 6000*(30/17)                   #rotational velocity
+rpm = 6000                              #rotational velocity
 
 #Blade mechanical inputs
-bladeDensity = 1520                 #Density for blade material [kg/m^3]
+bladeDensity = 1520                     #Density for blade material [kg/m^3]
 
 #######################################################################################################################

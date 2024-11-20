@@ -17,14 +17,14 @@ HTR = 27e-3/D
 
 #TARGET DESIGN PERFORMANCE
 preSpecifiedPerformance = 'thrust'      #Specify 'CT', 'CP', 'thrust', 'power', or 'noSwirl' (only available for drela methods)
-targetPerformance = 1                   #In terms of either CT, CP, thrust [N], power [W], None if noSwirl
+targetPerformance = 0.68                   #In terms of either CT, CP, thrust [N], power [W], None if noSwirl
 
 #atmospheric conditions
 H = 0                                   #height above sea level
 dT = 0                                  #temp change
 
 #Engine conditions
-Design_Speed = 30                       # Design speed [m/s]
+Design_Speed = 17                       # Design speed [m/s]
 M_axial = Design_Speed/340.29           #freestream axial mach number
 rpmChoice = 'rpm'                       #either 'rpm', 'tipMach', or 'J'
 rpm = 6000                              #rotational velocity
