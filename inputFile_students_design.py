@@ -17,17 +17,17 @@ HTR = 27e-3/D
 
 #TARGET DESIGN PERFORMANCE
 preSpecifiedPerformance = 'thrust'      #Specify 'CT', 'CP', 'thrust', 'power', or 'noSwirl' (only available for drela methods)
-targetPerformance = 0.68                   #In terms of either CT, CP, thrust [N], power [W], None if noSwirl
+targetPerformance = 2                #In terms of either CT, CP, thrust [N], power [W], None if noSwirl
 
 #atmospheric conditions
 H = 0                                   #height above sea level
 dT = 0                                  #temp change
 
 #Engine conditions
-Design_Speed = 17                       # Design speed [m/s]
+Design_Speed = 23                    # Design speed [m/s]
 M_axial = Design_Speed/340.29           #freestream axial mach number
 rpmChoice = 'rpm'                       #either 'rpm', 'tipMach', or 'J'
-rpm = 6000                              #rotational velocity
+rpm = 7000                              #rotational velocity
 
 #Upstream flow conditions
 axialVelocityUpstream = 0*np.ones(nPoints)
@@ -48,8 +48,8 @@ activityFactorChoice = 0                #(0) as is, (1) for custom
 activityFactorTarget = 120
 
 #airfoil thickness
-thickRoot = 20                          #as percent of chord
-thickTip = 15                         #as percent of chord
+thickRoot = 15                          #as percent of chord
+thickTip = 6                         #as percent of chord
 thicknessChoice = 'quadratic'           #'linear', 'quadratic', 'SR7L', 'GE36'
 typeOfParabolaThickness = 'tip'
 
@@ -60,13 +60,13 @@ camberChoice = 'quadratic'                 #'linear', 'quadratic', 'SR7L' (GE36 
 typeOfParabolaCamber = 'tip'
 
 # Blade loading (starting guess if chord is pre-spec, actual loading if chord is a variable)
-cldRoot = 0.3
-cldTip = 0.4
+cldRoot = 0.5
+cldTip = 0.5
 cldChoice = 'quadratic'                #'linear', 'quadratic'
 typeOfParabolacl = 'tip'
 
 #Blade mechanical inputs
-bladeDensity = 1520                 # Density for blade material [kg/m^3]
+bladeDensity = 1300     # Adjusted for SLA print            # Density for blade material [kg/m^3]
 
 ###############################################################################
 

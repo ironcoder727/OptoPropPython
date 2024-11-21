@@ -16,10 +16,10 @@ dT = 0                                  #temp change
 
 #Engine conditions for advance ratio sweep
 nOPs = 30
-advanceRatioList = np.linspace(0.2,0.9,nOPs)
+advanceRatioList = np.linspace(0.6,1.1,nOPs)
 typeOfOPSweep = 'constMach'             #'constMach', or 'constRPM'
 if typeOfOPSweep == 'constMach':
-    M_axial = 17/340.29             
+    M_axial = 23/340.29             
 elif typeOfOPSweep == 'constRPM':
     rpm = 6000         
 
@@ -27,7 +27,7 @@ elif typeOfOPSweep == 'constRPM':
 deltaBeta75 = 0*np.pi/180
 
 #Blade mechanical inputs
-bladeDensity = 1520                 #Density for blade material [kg/m^3]
+bladeDensity = 1300                 #Density for blade material [kg/m^3]
 
 #######################################################################################################################
 

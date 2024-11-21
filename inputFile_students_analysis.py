@@ -13,12 +13,12 @@ H = 0                                   #height above sea level
 dT = 0                                  #temp change
 
 #Engine conditions
-M_axial = 17/340.29                     #freestream axial mach number
+M_axial = 23/340.29                     #freestream axial mach number
 rpmChoice = 'rpm'                       #either 'rpm' or 'tipMach'
 tipRelMach = 0.9
-rpm = 6000                              #rotational velocity
+rpm = 7000                              #rotational velocity
 
 #Blade mechanical inputs
-bladeDensity = 1520                     #Density for blade material [kg/m^3]
+bladeDensity = 1300                    #Density for blade material [kg/m^3]
 
 #######################################################################################################################
