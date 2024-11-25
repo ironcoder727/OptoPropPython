@@ -21,11 +21,11 @@ vpl.close()
 
 # import inputFile_students_analysis as inputData
 
-# import inputFile_students_design as inputData
+import inputFile_students_design as inputData
 
 # import Kevin_design as inputData
 
-import inputFile_students_sweep_J as inputData
+# import inputFile_students_sweep_J as inputData
 
 
 ## Program running mode 

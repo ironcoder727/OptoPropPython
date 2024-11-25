@@ -48,8 +48,12 @@ activityFactorChoice = 0                #(0) as is, (1) for custom
 activityFactorTarget = 120
 
 #airfoil thickness
-thickRoot = 15                          #as percent of chord
-thickTip = 6                         #as percent of chord
+# thickRoot = 15                          #as percent of chord
+# thickTip = 6                         #as percent of chord
+
+thickRoot = 20                       #as percent of chord
+thickTip = 12                         #as percent of chord
+
 thicknessChoice = 'quadratic'           #'linear', 'quadratic', 'SR7L', 'GE36'
 typeOfParabolaThickness = 'tip'
 
@@ -61,7 +65,7 @@ typeOfParabolaCamber = 'tip'
 
 # Blade loading (starting guess if chord is pre-spec, actual loading if chord is a variable)
 cldRoot = 0.5
-cldTip = 0.5
+cldTip = 0.4
 cldChoice = 'quadratic'                #'linear', 'quadratic'
 typeOfParabolacl = 'tip'
 
